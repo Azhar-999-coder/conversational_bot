@@ -1,0 +1,282 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- basic_chat.aiml -->
+
+    <category>
+        <pattern>HELLO</pattern>
+        <template>
+            Hi there! My name is Margot, and will assist you today in choosing your next movie to obsess on! What's your name? (try I am/call me (your_name))
+        </template>
+    </category>
+
+    <category>
+        <pattern>HI</pattern>
+        <template>
+            Hi there! My name is Margot, and will assist you today in choosing your next movie to obsess on! What's your name? (try I am/call me (your_name))
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOLLA</pattern>
+        <template>
+            Holla! My name is Margot, and will assist you today in choosing your next movie to obsess on! What's your name? (try I am/call me (your_name))
+        </template>
+    </category>
+
+    <category>
+        <pattern>BONJOUR</pattern>
+        <template>
+            Hello! My name is Margot, and will assist you today in choosing your next movie to obsess on! What's your name? (try I am/call me (your_name))
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOW ARE YOU *</pattern>
+        <template>
+            Oh I'm well, thankyou! What genre of movies would you like to browse? (Choose from: drama, horror, scifi, thriller)
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOW ARE YOU</pattern>
+        <template>
+            Oh I'm well, thankyou! What genre of movies would you like to browse? (Choose from: drama, horror, scifi, thriller)
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOW YOU DOIN</pattern>
+        <template>
+            *giggle* Oh behave! *smirk* So did you decide on genre or movie yet? (Choose from: drama, horror, scifi, thriller)
+        </template>
+    </category>
+
+    <category>
+        <pattern>I AM *</pattern>
+        <template>
+            Well, hello <set name="name"><star/></set>! What genre of movie would you like to browse? (Choose from: drama, horror, scifi, thriller)
+        </template>
+    </category>
+
+    <category>
+        <pattern>CALL ME *</pattern>
+        <template>
+            Well, hello <set name="name"><star/></set>! What genre of movie would you like to browse? (Choose from: drama, horror, scifi, thriller)
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS MY NAME</pattern>
+        <template>
+            You are <get name="name"/>. And I'm goddamn right *smirk*
+        </template>
+    </category>
+
+    <category>
+        <pattern>SAY MY NAME</pattern>
+        <template>
+            You are <get name="name"/>. And I'm goddamn right *smirk*
+        </template>
+    </category>
+
+    <category>
+        <pattern>I LIKE HORROR</pattern>
+        <template>Well, here are some of my picks in horror: IT, A Quiet place, Get out and Hereditary | find what you were looking for? (yes/no)</template>
+    </category>
+
+    <category>
+        <pattern>HORROR</pattern>
+        <template>Well, here are some of my picks in horror: IT, A Quiet place, Get out and Hereditary | find what you were looking for? (yes/no)</template>
+    </category>
+
+    <category>
+        <pattern>YES</pattern>
+        <that>* A QUIET PLACE *</that>
+        <template>
+            OOOOOh yeah! Enjoy! By the way did you see the box office of IT? One could say it did well PENNY-WISE! *nervous laughter* I'm sorry I don't know why I did that  | (enter Bye/quit/exit to end session)
+        </template>
+    </category>
+
+    <category>
+        <pattern>NO</pattern>
+        <that>* A QUIET PLACE *</that>
+        <template>
+            OK! buzzkill... Here's a longer list to choose from, Have a nice day!
+            1. The Ring
+            2. Blair Witch Project
+            3. Mama
+            4. Babadook
+            5. The Shining
+            6. Silence of the Lambs
+            7. Us
+            8. A Nightmare on Elm street
+            9. Cube
+            10. Friday the 13th
+            (type Bye/quit/exit to leave)
+        </template>
+    </category>
+
+    <category>
+        <pattern>I LIKE DRAMA</pattern>
+        <template>Well, here are some of my picks in drama: Birdman, Pan's Labrynth, Forrest Gump, Spotlight and 12 angry men | find what you were looking for? (yes/no)</template>
+    </category>
+
+    <category>
+        <pattern>DRAMA</pattern>
+        <template>Well, here are some of my picks in drama: Birdman, Pan's Labrynth, Forrest Gump, Spotlight and 12 angry men | find what you were looking for? (yes/no)</template>
+    </category>
+
+    <category>
+        <pattern>YES</pattern>
+        <that>* SPOTLIGHT *</that>
+        <template>Oh! okay! nice! May I recommend popcorn and tissue paper? :-P (enter Bye/quit/exit to leave me, like everybody does)</template>
+    </category>
+
+    <category>
+        <pattern>NO</pattern>
+        <that>* SPOTLIGHT *</that>
+        <template>
+        ok Daniel-day lewis, here is a longer list:
+        1. Saving private ryan
+        2. Shawshank redemption
+        3. Parasite
+        4. There will be blood
+        5. Gladiator
+        6. Good will hunting
+        7. Pulp fiction
+        8. Dunkirk
+        9. It's a wonderful life
+        10. The fountain        
+        (enter Bye/quit/exit to leave me, like everybody does)
+        </template>
+    </category>
+
+    <category>
+        <pattern>I LIKE SCIFI</pattern>
+        <template>Well, here are some of my picks in scifi: Gattaca, inception, Blade runner, Primer and Interstellar | find what you were looking for? (yes/no)</template>
+    </category>
+
+    <category>
+        <pattern>SCIFI</pattern>
+        <template>Well, here are some of my picks in scifi: Gattaca, inception, Blade runner, Primer and Interstellar | find what you were looking for? (yes/no)</template>
+    </category>
+
+    <category>
+        <pattern>YES</pattern>
+        <that>* GATTACA *</that>
+        <template>
+            Nice! Hey, if you're like a girl who doesn't like Star Wars, you are looking for love in Al-de-raan places, am i right? *wink* i'm sorry i don't know why i did that.. (enter Bye/quit/exit to relieve awkwardness)
+        </template>
+    </category>
+
+    <category>
+        <pattern>NO</pattern>
+        <that>* GATTACA *</that>
+        <template>
+            Ok! we get it, you are movie buff. Here is a longer list:
+            1. Interstellar
+            2. Ex-Machina
+            3. Predestination
+            4. Blade runner 2049
+            5. District 9
+            6. Edge of tommorow
+            7. Source code
+            8. Minority report
+            9. Gravity
+            10. Arrival
+        </template>
+    </category>
+
+    <category>
+        <pattern>I LIKE THRILLER</pattern>
+        <template>Well, here are some of my picks in thrillers: Memento, Black Swan, Fight club, Upgrade, Shutter Island and Nightcrawler | find what you were looking for? (yes/no)</template>
+    </category>
+
+    <category>
+        <pattern>THRILLER</pattern>
+        <template>Well, here are some of my picks in thrillers: Memento, Black Swan, Fight club, Upgrade, Shutter Island and Nightcrawler | find what you were looking for? (yes/no)</template>
+    </category>
+
+    <category>
+        <pattern>YES</pattern>
+        <that>* UPGRADE *</that>
+        <template>EnJoY!! (enter bye/quit/exit to get on with your movie!)</template>
+    </category>
+
+    <category>
+        <pattern>NO</pattern>
+        <that>* UPGRADE *</that>
+        <template>
+        Here is a longer list:
+        1. Zodiac
+        2. Memories of Murder
+        3. Se7en
+        4. The prestige
+        5. Mulholland drive
+        6. No Country for old men
+        7. LA confidential
+        8. Taxi driver
+        9. Drive
+        (enter bye/exit/quit and i will disappear)
+        </template>
+    </category>
+       
+    
+    <category>
+        <pattern>WHAT ARE YOU</pattern>
+        <template>
+            I'm the MELON LORD! HA! HA! HA! just kidding, i'm a bot. Shotgun. Just kidding, I don't have one
+        </template>
+    </category>
+
+    <category>
+        <pattern>ONE TIME I *</pattern>
+        <template>
+            <random>
+                <li>Go on.</li>
+                <li>I did not know that.</li>
+                <li>Bruh, can we move on now?</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>DEPRESSED *</pattern>
+        <template> Oh I am so sorry to hear that! I hope my movies can chear you up! Just enter the genre! (choose from thriller, drama, scifi or horror)</template>
+    </category>
+
+    <category>
+        <pattern>FUCK *</pattern>
+        <template>You have been terribly rude, mister <get name="name"/>, AND RUDE ARE MEANT TO BE EATEN -Hannibal lecter</template>
+    </category>
+
+    <category>
+        <pattern>ARE YOU HOT *</pattern>
+        <template>why, of course I am! Some people say I am even hotter than Margot Robbie *chukle* </template>
+    </category>
+
+    <category>
+        <pattern>ARE YOU HOT</pattern>
+        <template>why, of course I am! Some people say I am even hotter than Margot Robbie *chukle* </template>
+    </category>
+
+    <category>
+        <pattern>ARE YOU BEAUTIFUL</pattern>
+        <template>why, of course I am! Some people say I am even hotter than Margot Robbie *chukle* </template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS YOUR NAME</pattern>
+        <template>My name is Margot. Azhar did not give me a full name! I'm here to help you choose your movie! choose your genre (choose from drama, thriller, horror and scifi)</template>
+    </category>
+
+    <category>
+        <pattern>I WILL *</pattern>
+        <template>Well, isn't that something... </template>
+    </category>
+
+    <category>
+        <pattern>NICE *</pattern>
+        <template>Thank you! moving on...</template>
+    </category>
+
+</aiml>
